@@ -1,8 +1,25 @@
-<head> 
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Shared external stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-  <h1>Project B</h1>
+<body>
+
+  <h1 id="top">Project B</h1>
+
   <p>You arrived from Project A.</p>
-    <p>click here to go back to <a href = "ProjectA.html"> Project A</a></p>
+
+  <!-- Relative link back to Project A -->
+  <p>Click here to go back to
+    <a href="ProjectA.html" title="Go to Project A">Project A</a>
+  </p>
+
+  <!-- Relative link to the home page -->
+  <p><a href="index.html" title="Return to home page">Home</a></p>
+
+  <!-- Anchor link to top of this page -->
+  <p><a href="#top" title="Jump to top">Back to top</a></p>
+
 </body>
+</html>
