@@ -1,2 +1,19 @@
-h1 {color:Green;}
-p{ font-family:Helvetica; color:brown}
+/* Shared styling for all pages in the project */
+ 
+/* Headings are green */
+h1 { color: green; }
+ 
+/* Paragraph text uses Helvetica, colored brown */
+p {
+  font-family: Helvetica;
+  color: brown;
+}
+ 
+/* Default (unvisited) link color */
+a:link { color: blue; }
+ 
+/* Link color AFTER it has been visited */
+a:visited { color: purple; }
+ 
+/* Link color WHILE the mouse hovers over it */
+a:hover { color: red; }
