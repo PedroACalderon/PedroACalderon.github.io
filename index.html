@@ -1,8 +1,47 @@
-<head> 
+ex · HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Link to the shared external stylesheet (the "cascading" part) -->
   <link rel="stylesheet" href="style.css">
 </head>
-<p> Here are my Projects 
-  <a href = "https://pedroacalderon.github.io/ProjectA"> Project A </a> 
-  <a href = "https://pedroacalderon.github.io/ProjectB"> Project B </a> 
-</p>
+<body>
  
+  <!-- id="top" is the anchor target for the "back to top" link at the bottom -->
+  <h1 id="top">My Projects Home Page</h1>
+ 
+  <!-- Relative links to the other pages in THIS same project.
+       Note: filenames need the .html extension or they 404 -->
+  <p>Here are my projects:
+    <a href="ProjectA.html" title="Go to Project A">Project A</a> |
+    <a href="ProjectB.html" title="Go to Project B">Project B</a>
+  </p>
+ 
+  <!-- EXTERNAL / ABSOLUTE link to an outside website.
+       target="_blank" makes it open in a NEW window/tab -->
+  <p>Learn HTML at
+    <a href="https://developer.mozilla.org"
+       title="Opens MDN in a new tab"
+       target="_blank">MDN Web Docs</a>
+  </p>
+ 
+  <!-- This external link opens in the SAME window (default, no target) -->
+  <p>Search on
+    <a href="https://www.google.com" title="Google (same tab)">Google</a>
+  </p>
+ 
+  <!-- mailto: special link with a pre-filled subject line -->
+  <p>Questions? 
+    <a href="mailto:pedro@example.com?subject=About%20My%20Projects"
+       title="Email me">Send me an email</a>
+  </p>
+ 
+  <!-- filler so the page is tall enough to scroll -->
+  <h2 id="section2">More Info</h2>
+  <p>This page demonstrates several types of links for the assignment.</p>
+ 
+  <!-- INTERNAL/ANCHOR link: the # jumps to the element with id="top" -->
+  <p><a href="#top" title="Jump to top of page">Back to top</a></p>
+ 
+</body>
+</html>
